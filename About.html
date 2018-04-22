@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+	<title>HM NEWS|ABOUT</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="wow.js"></script>
+    <script>
+      new WOW().init();
+      var dt=new Date();
+      document.getElementById("DT").innerHTML=dt.toLocaleString();
+      function openSlideMenu(){
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+      }
+      function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+      }
+  </script>
+  <link rel="stylesheet" type="text/css" href="MainCSS.css">
+  <link rel="stylesheet" type="text/css" href="Animate.css">
+</head>
+<body>
+ 	<header>
+    <div class="head-container animated fadeInUp">
+ 		  <div class="header-text"><em>This website is developed by Harshit Malik.</em></div>
+    </div>
+ 	</header>
+ <hr/>
+ <div id="logo" class="animated fadeIn">
+  <img src="images/logo.jpg" alt="News Logo"/></div>
+   <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+    <ul class="navbar-nav">
+      <li><a href="NewsWebsite.html">Home</a></li>
+      <li><a class="active" href="About.html">About</a></li>
+      <li><a href="NewsWebsite.html#N">News</a></li>
+      <li><a href="NewsWebsite.html#contact">Contact</a></li>
+      <li><span id="DT"></span></li>
+    </ul>
+    <span id="DT"></span>
+  </nav>
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="NewsWebsite.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="NewsWebsite.html#N">News</a>
+    <a href="NewsWebsite.html#contact">Contact</a>
+  </div>
+  <div class="about-container">
+  	<div class="about-card">
+  	 <div class="about-title font1 animated slideInLeft"><h1>About Developer</h1></div>
+  	 <hr/>
+  	 <div class="about-img animated fadeInUp"><img src="images/dev.jpg" alt="Developer"></div>
+  	 <div class="about-content wow animated fadeInRight" data-wow-delayes="1200ms">
+  	 	  Hey there!<br/>
+  	 	  I am Harshit Malik. This website is developed by me. I am Btech first year student of IIT Ropar in CSE department. I am eighteen year old. I love web development. Apart from web development, I love coding, playing Basketball, listening to music and watching movies.
+  	</div>
+  </div>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <div class="about-container">
+  	<div class="about-card">
+  	 <div class="about-title font1 wow animated slideInLeft" data-wow-delayes="1000ms""><h1>About Website</h1></div>
+  	 <hr/>
+  	 <div class="about-img about-web wow animated fadeInUp" data-wow-delayes="1000ms"">
+  	 	<img src="images/web.jpg" alt="Developer">
+  	 </div>
+  	 <div class="about-content wow animated fadeInRight" data-wow-delayes="1000ms"">
+  	 	  This is a news website of HM NEWS (Harshit Malik NEWS XD) solely developed by above person with help from various internet resourses like youtube, w3school, edx etc.<br/>
+  	 	  No templtes has been used in developing of this website but some tools have been used viz. Animate.css and wow.js.<br/>
+  	 	  For best experience , view it on Desktop.
+  	</div>
+  </div>
+   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <footer class="wow animated fadeInUp" data-wow-delayes="1000ms" id="contact">
+       <a href="#top">GOTO TOP</a>
+       <img src="images/footer.jpg" alt="footer">
+     </footer>
+ </body>
+ </html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <title>HM News</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="wow.js"></script>
+  <script>
+     new WOW().init();     
+     var dt=new Date();
+     document.getElementById("DT").innerHTML=dt.toLocaleString();
+     function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+      }
+      function closeSlideMenu(){
+       document.getElementById('side-menu').style.width = '0';
+       document.getElementById('main').style.marginLeft = '0';
+      }
+  </script>
+  <link rel="stylesheet" type="text/css" href="MainCSS.css">
+  <link rel="stylesheet" type="text/css" href="Animate.css">
+ </head>
+ <body>
+ 	<header id="top">
+    <div class="head-container animated fadeInUp">
+ 		  <div class="header-text"><em>This website is developed by Harshit Malik.</em></div>
+    </div>
+ 	</header>
+ <hr/>
+ <div id="logo" class="animated fadeIn">
+  <img src="images/logo.jpg" alt="News Logo"/></div>
+   <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+    <ul class="navbar-nav">
+      <li><a class="active" href="NewsWebsite.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="NewsWebsite.html#N">News</a></li>
+      <li><a href="NewsWebsite.html#contact">Contact</a></li>
+      <li><span id="DT"></span></li>
+    </ul>
+    <span id="DT"></span>
+   </nav>
+   <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="NewsWebsite.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="NewsWebsite.html#N">News</a>
+    <a href="NewsWebsite.html#contact">Contact</a>
+  </div>
+ <div class="Main-area">
+  <div class="container animated fadeInLeft" align="left">  
+   <input type="radio" id="i1" name="images" checked />
+   <input type="radio" id="i2" name="images" />
+   <input type="radio" id="i3" name="images" />
+   <input type="radio" id="i4" name="images" />
+   <input type="radio" id="i5" name="images" />  
+   <div class="slide_img" id="one">      
+     <img src="images/JacobZuma.jpg" alt="An international news">
+     <label class="prev" for="i5"><span>&#x2039;</span></label>
+      <div class="bottom-left">
+         Jacob Zuma resigns as South Africa's president on eve of no-confidence vote
+      </div>
+     <label class="next" for="i2"><span>&#x203a;</span></label>  
+   </div>
+   <div class="slide_img" id="two">
+     <img src="images/Brahmos.jpeg" alt="A national news">
+     <label class="prev" for="i1"><span>&#x2039;</span></label>
+      <div class="bottom-left">India successfully tests supersonic cruise missile BrahMos</div>
+     <label class="next" for="i3"><span>&#x203a;</span></label>
+   </div>
+   <div class="slide_img" id="three">
+     <img src="images/Avengers.jpg" alt="An entertainment news">  
+      <label class="prev" for="i2"><span>&#x2039;</span></label>
+       <div class="bottom-left">Avengers is releasing on 27th april.</div>
+      <label class="next" for="i4"><span>&#x203a;</span></label>
+   </div>
+   <div class="slide_img" id="four" >
+      <img src="images/ROMA.jpg" alt="A sports news"> 
+      <label class="prev" for="i3"><span>&#x2039;</span></label>
+        <div class="bottom-left">Roma dump Barcelona out of Champions League</div>
+      <label class="next" for="i5"><span>&#x203a;</span></label>
+   </div>
+   <div class="slide_img" id="five">
+      <img src="images/KKR.jpeg" alt="A sports news">  
+      <label class="prev" for="i4"><span>&#x2039;</span></label>
+        <div class="bottom-left">KKR won over RR by 7 wickets </div>
+      <label class="next" for="i1"><span>&#x203a;</span></label>
+   </div>
+   <div id="nav_slide">
+    <label for="i1" class="dots" id="dot1"></label>
+    <label for="i2" class="dots" id="dot2"></label>
+    <label for="i3" class="dots" id="dot3"></label>
+    <label for="i4" class="dots" id="dot4"></label>
+    <label for="i5" class="dots" id="dot5"></label>
+   </div>
+ </div>
+ <div class="latest_news animated fadeInRight">
+  <div class="latest_news_title">@Latest News</div>
+    <hr color="white">
+  <div class="latest_news_content">
+   <marquee direction="up" height="459" loop="100">
+    <img src="images/thumbnail1.jpg" height="80" width="80" alt="thumbnail" align="left" />
+    <p class="wrap_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+     <hr color="white">
+    <img src="images/thumbnail8.jpg" height="80" width="80" alt="thumbnail" align="left"/>
+     <p class="wrap_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+     <hr color="white">
+    <img src="images/thumbnail3.jpg" height="80" width="80" alt="thumbnail" align="left"/>
+     <p class="wrap_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+     <hr color="white">
+    <img src="images/thumbnail4.jpg" height="80" width="80" alt="thumbnail" align="left"/>
+     <p class="wrap_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+     <hr color="white">
+    <img src="images/thumbnail5.jpg" height="80" width="80" alt="thumbnail" align="left"/>
+     <p class="wrap_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+     <hr color="white">
+     <img src="images/thumbnail6.jpg" height="80" width="80" alt="thumbnail" align="left"/>
+     <p class="wrap_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+     <hr color="white">
+    <img src="images/thumbnail7.jpg" height="80" width="80" alt="thumbnail" align="left"/>
+     <p class="wrap_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+     <hr color="white">
+    <img src="images/thumbnail2.jpg" height="80" width="80" alt="thumbnail" align="left"/>
+     <p class="wrap_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+     <hr color="white">
+    <img src="images/thumbnail9.jpg" height="80" width="80" alt="thumbnail" align="left"/>
+     <p class="wrap_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+     <hr color="white">
+    <img src="images/thumbnail10.jpg" height="80" width="80" alt="thumbnail" align="left"/>
+     <p class="wrap_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+     <hr color="white">
+   </marquee>
+  </div>
+ </div>
+</div>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+ <div class="img_menu wow animated fadeInUp" data-wow-delayes="1000ms" id="N">
+  <a href="#N1"><figure>
+  <img src="images/international.jpg" alt="international news" height="165" width="165" />
+  <figcaption><b>International</b></figcaption>
+  </figure></a>
+  <a href="#N2"><figure>
+  <img src="images/national.jpg" alt="national news" height="165" width="165" />
+  <figcaption><b>National</b></figcaption>
+  </figure></a>
+  <a href="#N3"><figure>
+  <img src="images/economics.jpg" alt="economics news" height="165" width="165"  />
+  <figcaption><b>Economics</b></figcaption>
+  </figure></a>
+  <a href="#N4"><figure>
+  <img src="images/entertainment.jpg" alt="entertainment news" height="165" width="165" />
+  <figcaption><b>Entertainment</b></figcaption>
+  </figure></a>
+  <a href="#N5"><figure>
+  <img src="images/sports.jpg" alt="sports news" height="165" width="165" />
+  <figcaption><b>Sports</b></figcaption>
+  </figure></a>
+  <a href="#N6"><figure>
+  <img src="images/weather.jpg" alt="weather news" height="165" width="165"  />
+  <figcaption><b>Weather</b></figcaption>
+  </figure></a>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div class="news_section ">
+  <font id="N1" class="font1 wow animated bounceInLeft" data-wow-delayes="1000ms"> INTERNATIONAL NEWS </font><hr/>
+   <div class="card wow animated fadeInLeft" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 1</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail01.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <div class="card wow animated fadeInUp" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 2</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail01.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <div class="card wow animated fadeInRight" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 3</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail01.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <font id="N2" class="font1 wow animated bounceInLeft" data-wow-delayes="1000ms">NATIONAL NEWS</font><hr/>
+   <div class="card wow animated fadeInLeft" data-wow-delayes="1000ms"">
+    <font class="font2">News Heading 1</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail02.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <div class="card wow animated fadeInUp" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 2</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail02.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <div class="card wow animated fadeInRight" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 3</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail02.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <font id="N3" class="font1 wow animated bounceInLeft" data-wow-delayes="1000ms"> ECONOMICS NEWS </font><hr/>
+   <div class="card wow animated fadeInLeft" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 1</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail03.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <div class="card wow animated fadeInUp" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 2</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail03.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <div class="card wow animated fadeInRight" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 3</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail03.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <font id="N4" class="font1 wow animated bounceInLeft" data-wow-delayes="1000ms"> ENTERTAINMENT NEWS </font><hr/>
+   <div class="card wow animated fadeInLeft" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 1</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail04.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <div class="card wow animated fadeInUp" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 2</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail04.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <div class="card wow animated fadeInRight" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 3</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail04.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <font id="N5" class="font1 wow animated bounceInLeft" data-wow-delayes="1000ms"> SPORTS NEWS</font><hr/>
+   <div class="card wow animated fadeInLeft" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 1</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail05.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <div class="card wow animated fadeInUp" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 2</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail05.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <div class="card wow animated fadeInRight" data-wow-delayes="1000ms">
+    <font class="font2">News Heading 3</font>
+    <hr />
+     <div class="card-content">
+      <center><img src="images/thumbnail05.jpg" alt="thumbnail" align="top" /></center>
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      <a href="#" align="right">Read more.</a>
+     </div>
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <font id="N6" class="font1 wow animated bounceInLeft" data-wow-delayes="600ms">WEATHER NEWS </font><hr/>
+     <div class="card-weather wow animated fadeInUp" data-wow-delayes="1000ms">
+       <figure>
+        <img src="images/weather1.jpg" alt="Weather report" height="165" width="165" />
+        <figcaption><b>Today</b></figcaption>
+       </figure>
+       <figure>
+        <img src="images/weather2.jpg" alt="Weather report" height="165" width="165" />
+        <figcaption><b>Monday</b></figcaption>
+       </figure>
+       <figure>
+        <img src="images/weather3.jpg" alt="Weather report" height="165" width="165" />
+        <figcaption><b>Tuesday</b></figcaption>
+       </figure>
+       <figure>
+        <img src="images/weather4.jpg" alt="Weather report" height="165" width="165" />
+        <figcaption><b>Wednesday</b></figcaption>
+       </figure>
+       <figure>
+        <img src="images/weather5.jpg" alt="Weather report" height="165" width="165" />
+        <figcaption><b>Thrusday</b></figcaption>
+       </figure>
+       <figure>
+        <img src="images/weather6.jpg" alt="Weather report" height="165" width="165" />
+        <figcaption><b>Friday</b></figcaption>
+       </figure>
+     </div>
+     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  </div>
+  <footer class="wow animated fadeInUp" data-wow-delayes="1000ms" id="contact">
+       <a href="#top">GOTO TOP</a>
+       <img src="images/footer.jpg" alt="footer">
+  </footer>
+</body>
+</html>
